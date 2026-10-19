@@ -1,0 +1,187 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -accent: #4f46e5;
+    -accent-dark: #4338ca;
+}
+
+/* ---------- login ---------- */
+
+.login-root {
+    -fx-background-color: linear-gradient(to bottom right, #eef2ff, #e0e7ff);
+}
+
+.card {
+    -fx-padding: 28;
+    -fx-vgap: 10;
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(30, 41, 59, 0.15), 18, 0, 0, 4);
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e1b4b;
+}
+
+.muted {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+.field-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+    -fx-padding: 8 0 0 0;
+}
+
+.text-field, .text-area {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-background-color: white;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: -accent;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}
+
+.notice {
+    -fx-text-fill: #b91c1c;
+}
+
+/* ---------- buttons ---------- */
+
+.button {
+    -fx-background-radius: 8;
+    -fx-padding: 8 14;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-color: #e5e7eb;
+    -fx-text-fill: #1f2937;
+}
+
+.button:hover {
+    -fx-background-color: #d1d5db;
+}
+
+.button.primary {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+}
+
+.button.primary:hover {
+    -fx-background-color: -accent-dark;
+}
+
+.button.danger {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #b91c1c;
+}
+
+.button.danger:hover {
+    -fx-background-color: #fecaca;
+}
+
+/* ---------- chat ---------- */
+
+.chat-root {
+    -fx-padding: 12;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-background-color: #eef1f5;
+}
+
+.header {
+    -fx-padding: 10 14;
+    -fx-hgap: 8;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 8, 0, 0, 2);
+}
+
+.status-online {
+    -fx-fill: #22c55e;
+}
+
+.status-offline {
+    -fx-fill: #ef4444;
+}
+
+.status-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+.user-label {
+    -fx-text-fill: #6b7280;
+    -fx-padding: 0 0 0 8;
+}
+
+.badge {
+    -fx-background-color: #fef3c7;
+    -fx-text-fill: #92400e;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 3 8;
+    -fx-background-radius: 10;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e5e7eb;
+    -fx-padding: 6;
+}
+
+.list-view .list-cell,
+.list-view .list-cell:filled:selected,
+.list-view .list-cell:filled:hover {
+    -fx-background-color: transparent;
+    -fx-padding: 3 6;
+}
+
+.bubble {
+    -fx-padding: 7 11;
+    -fx-background-radius: 12;
+}
+
+.bubble.mine {
+    -fx-background-color: -accent;
+}
+
+.bubble.other {
+    -fx-background-color: #f1f5f9;
+}
+
+.bubble .meta {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #64748b;
+}
+
+.bubble.mine .meta {
+    -fx-text-fill: #c7d2fe;
+}
+
+.bubble .body {
+    -fx-text-fill: #0f172a;
+}
+
+.bubble.mine .body {
+    -fx-text-fill: white;
+}
+
+.system-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+    -fx-padding: 2 0;
+}
