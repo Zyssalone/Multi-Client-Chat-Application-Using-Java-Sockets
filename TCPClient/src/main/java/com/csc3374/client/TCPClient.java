@@ -4,7 +4,6 @@ import com.csc3374.client.model.ServerAddress;
 import com.csc3374.client.view.ClientApp;
 import javafx.application.Application;
 
-// Run with: java -jar TCPClient.jar <ServerIPAddress> <PortNumber>   e.g. localhost 3000
 // Not extending Application on purpose, same fat-jar JavaFX issue as TCPServer.
 public class TCPClient {
     public static void main(String[] args) {
