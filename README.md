@@ -107,6 +107,8 @@ Line-based UTF-8 text, one message per line:
 | S → C | `SYS\|text` | join/leave notices, errors |
 | S → C | `USERS\|a,b,c` | reply to `allUsers` (requester only) |
 
+PNG versions of every diagram are in [docs/uml](docs/uml).
+
 ### Class diagram
 
 ```mermaid
@@ -186,7 +188,7 @@ classDiagram
     }
     class ChatClient {
         -Socket socket
-        -PrintWriter out
+        -PrintWriter toServer
         -AtomicBoolean online
         -boolean readOnly
         +connect(ServerAddress, String)
