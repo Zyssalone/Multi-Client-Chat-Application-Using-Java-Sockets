@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TCPServer" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.csc3374.server.TCPServer" />
+    <module name="tcp-server" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
